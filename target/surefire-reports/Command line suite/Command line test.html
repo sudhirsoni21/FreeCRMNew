@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 17 22:34:01 EDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>600 seconds (600804 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.qa.tests.MainPageTest.ClickOnLoginButtonTest()'><b>ClickOnLoginButtonTest</b><br>Test class: com.crm.qa.tests.MainPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.crm.qa.tests.MainPageTest@3f2a3a5</td></tr>
+<tr>
+<td title='com.crm.qa.tests.LoginPageTest.LoginToCRMTest()'><b>LoginToCRMTest</b><br>Test class: com.crm.qa.tests.LoginPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.crm.qa.tests.LoginPageTest@60addb54</td></tr>
+<tr>
+<td title='com.crm.qa.tests.MainPageTest.VerifyCRMLogoTest()'><b>VerifyCRMLogoTest</b><br>Test class: com.crm.qa.tests.MainPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.MainPageTest@3f2a3a5</td></tr>
+<tr>
+<td title='com.crm.qa.tests.MainPageTest.VerifyPageTitleTest()'><b>VerifyPageTitleTest</b><br>Test class: com.crm.qa.tests.MainPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.MainPageTest@3f2a3a5</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.deleteContactsTest()'><b>deleteContactsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: Max, J., Oswal, Boss, Friends, Lead, Inactive, Yes, No, No</td>
+<td></td>
+<td>3</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.deleteContactsTest()'><b>deleteContactsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: John, S., Kelly, Amazon, Public, Contact, Terminated, No, Yes, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.deleteContactsTest()'><b>deleteContactsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: David, N., Rose, Twitter, Inactive, Customer, On Hold, No, No, Yes</td>
+<td></td>
+<td>10</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.fillCreateNewContactsFormTest()'><b>fillCreateNewContactsFormTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: Max, J., Oswal, Boss, Friends, Lead, Inactive, Yes, No, No</td>
+<td></td>
+<td>8</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.fillCreateNewContactsFormTest()'><b>fillCreateNewContactsFormTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: John, S., Kelly, Amazon, Public, Contact, Terminated, No, Yes, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.fillCreateNewContactsFormTest()'><b>fillCreateNewContactsFormTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest<br>Parameters: David, N., Rose, Twitter, Inactive, Customer, On Hold, No, No, Yes</td>
+<td></td>
+<td>2</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.LoginPageTest.forgetPasswordLinkDisplayTest()'><b>forgetPasswordLinkDisplayTest</b><br>Test class: com.crm.qa.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.LoginPageTest@60addb54</td></tr>
+<tr>
+<td title='com.crm.qa.tests.MainPageTest.getCountOfLinksOnMainPage()'><b>getCountOfLinksOnMainPage</b><br>Test class: com.crm.qa.tests.MainPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.MainPageTest@3f2a3a5</td></tr>
+<tr>
+<td title='com.crm.qa.tests.MainPageTest.getTextForAllLinksOnMainPage()'><b>getTextForAllLinksOnMainPage</b><br>Test class: com.crm.qa.tests.MainPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.MainPageTest@3f2a3a5</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyCalendarLinkTest()'><b>verifyCalendarLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyCallsLinkTest()'><b>verifyCallsLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyCasesLinkTest()'><b>verifyCasesLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyCompaniesLink()'><b>verifyCompaniesLink</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyCompaniesLinkTest()'><b>verifyCompaniesLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyContactsLinkTest()'><b>verifyContactsLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.verifyContactsPageTest()'><b>verifyContactsPageTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyDealsLinkTest()'><b>verifyDealsLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyEmailLinkTest()'><b>verifyEmailLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.verifyExportButtonExistsTest()'><b>verifyExportButtonExistsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyFormsLink()'><b>verifyFormsLink</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.verifyHideFilterButtonExistsTest()'><b>verifyHideFilterButtonExistsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyHomeLinkTest()'><b>verifyHomeLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyLoggedInUserNameTest()'><b>verifyLoggedInUserNameTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.ContactsPageTest.verifyNewButtonExistsTest()'><b>verifyNewButtonExistsTest</b><br>Test class: com.crm.qa.tests.ContactsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.ContactsPageTest@5d624da6</td></tr>
+<tr>
+<td title='com.crm.qa.tests.LoginPageTest.verifyPageTitleTest()'><b>verifyPageTitleTest</b><br>Test class: com.crm.qa.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.LoginPageTest@60addb54</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifyTasksLinkTest()'><b>verifyTasksLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+<tr>
+<td title='com.crm.qa.tests.HomePageTest.verifydocumentsLinkTest()'><b>verifydocumentsLinkTest</b><br>Test class: com.crm.qa.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.qa.tests.HomePageTest@1e67b872</td></tr>
+</table><p>
+</body>
+</html>

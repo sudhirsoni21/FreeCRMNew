@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreeCRM NewUI Automated tests for Demo]" parallel="none">
+  <listeners>
+    <listener class-name="com.crm.qa.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="FreeCRMNewApplicationTests(failed)" parallel="none">
+    <classes>
+      <class name="com.crm.qa.tests.ContactsPageTest">
+        <methods>
+          <include name="deleteContactsTest" invocation-numbers="0 2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.ContactsPageTest -->
+      <class name="com.crm.qa.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.LoginPageTest -->
+      <class name="com.crm.qa.tests.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.HomePageTest -->
+      <class name="com.crm.qa.tests.MainPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.MainPageTest -->
+    </classes>
+  </test> <!-- FreeCRMNewApplicationTests(failed) -->
+</suite> <!-- Failed suite [FreeCRM NewUI Automated tests for Demo] -->

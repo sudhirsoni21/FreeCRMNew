@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FreeCRM_NewUI_Demo]">
+  <listeners>
+    <listener class-name="com.crm.qa.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="FreeCRMApplicationTests(failed)">
+    <classes>
+      <class name="com.crm.qa.tests.LoginPageTest">
+        <methods>
+          <include name="verifyPageTitleTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- FreeCRMApplicationTests(failed) -->
+</suite> <!-- Failed suite [FreeCRM_NewUI_Demo] -->
