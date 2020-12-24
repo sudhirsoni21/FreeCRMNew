@@ -40,7 +40,8 @@ public class TestBase {
 		String browser = prop.getProperty("browser");
 		String url = prop.getProperty("URL");
 		
-		if (browser.equals("chrome")) {			
+		if (browser.equals("chrome")) {		
+			System.setProperty("webdriver.chrome.whitelistedIps", "");
 			System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 			}
